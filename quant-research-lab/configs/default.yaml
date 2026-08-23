@@ -1,0 +1,17 @@
+seed: 42
+n_rows: 60000
+horizon: 5
+transaction_cost_bps: 1.0
+prediction_threshold: 0.00008
+max_position: 1.0
+regime_change: 0.70
+test_fraction: 0.20
+validation_fraction: 0.20
+monitor_window: 1000
+
+# Toggle expensive models during research iterations.
+# Set mlp: false for faster runs; keep it true for the full comparison.
+models:
+  ridge: true
+  random_forest: true
+  mlp: true
